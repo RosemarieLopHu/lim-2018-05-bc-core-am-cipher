@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="Container">
+      <h1>Secret Message</h1>
+      <hr>
+      <div style="float:left;">
+        <label>Escribe el texto aqui:</label>
+        <br>
+        <textarea id="decoded" placeholder="Ingresa el texto a cifrar"></textarea>
+        <br>
+        <label>Texto Cifrado:</label>
+        <br>
+        <textarea id="encoded" placeholder="Ingresa el texto descifrado a cirar"></textarea>
+      </div>
+      <div style="float:left;">
+        <label>Key:</label>
+        <br>
+        <input type="number" id="offset" value="0"><br>
+        <input type="submit" onclick="encrypt()" value="Cipher"><br>
+        <input type="submit" onclick="decrypt()" value="Dechiper"><br>
+        
+      </div>
+      <div>
+        <label>Output:</label><br>
+        <textarea id="chains" readonly></textarea>
+      </div>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
