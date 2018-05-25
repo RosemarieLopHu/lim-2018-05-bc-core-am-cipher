@@ -7,29 +7,31 @@
   </head>
   <body>
     <div class="Container">
-      <h1>Secret Message</h1>
+      <h1>🔐Secret Message🔐</h1>
       <hr>
       <div style="float:left;">
-        <label>Escribe el texto aqui:</label>
+        <label>🔑Escribe el texto aqui:</label>
         <br>
-        <textarea id="decoded" placeholder="Ingresa el texto a cifrar"></textarea>
+        <textarea id="decrypted" placeholder="Ingresa el mensaje a cifrar"></textarea>
         <br>
-        <label>Texto Cifrado:</label>
+        <label>🤔Texto Cifrado:</label>
         <br>
-        <textarea id="encoded" placeholder="Ingresa el texto descifrado a cirar"></textarea>
+        <textarea id="encrypted" placeholder="Ingresa el mennsaje cifrado a descifrar"></textarea>
       </div>
       <div style="float:left;">
-        <label>Key:</label>
+        <label>offset:</label>
         <br>
-        <input type="number" id="offset" value="0"><br>
+        <input type="number" id="offset" min="0" max="6" value="0"><br>
         <input type="submit" onclick="encrypt()" value="Cipher"><br>
-        <input type="submit" onclick="decrypt()" value="Dechiper"><br>
+        <input type="submit" onclick="decrypt()" value="Decipher"><br>
+        <input type="reset" onclick="clearBoxes()" value="Reset"><br>
         
       </div>
-      <div>
-        <label>Output:</label><br>
-        <textarea id="chains" readonly></textarea>
-      </div>
+        <div>
+          <label>Output:</label><br>
+          <br>
+          <textarea id="chains" readonly></textarea>
+        </div>  
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
