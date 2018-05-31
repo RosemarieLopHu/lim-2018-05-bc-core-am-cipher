@@ -1,27 +1,13 @@
-function clearBoxes() {
-    document.querySelector('#decrypted').value = "";
-    document.querySelector('#encrypted').value = "";
-    document.getElementById("chains").value = "";
-    document.getElementById("offset").value = 0;
-function encrypt() {
-    let decrypted = document.querySelector('#decrypted').value.toLocaleUpperCase() || "";
-    let encrypted = document.querySelector('#encrypted');
-    let offset = document.querySelector('#offset');
-    let cipherArray = new Array();
+let string1 = document.getElementById("textToCipherAndDecipher");
+let offsetNumber = document.getElementById("number");
+  //first obtener el input text y  button a través de dos variables diferentes
 
-    [...decrypt].forEach(char => {
-        //console.log(char.charCodeAt())
+let button1 = document.getElementById("cipherButton");
+let button2 = document.getElementById("decipherButton");
 
-        if (char.charCodeAt() === 32) {
-            cipherArray.push(32);
-        } else {
-            charNumber = char.charCodeAt() - 65;
-            //console.log(charNumber)
-            cipherChar = (charNumber + parseInt(key.value)) % 26;
-            //console.log(cipherChar)
-            cipherArray.push(cipherChar + 65);
-        }
-    })
-    document.getElementById("chains").value = String.fromCharCode(...cipherArray);
-    //console.log(String.fromCharCode(...cipherArray))
-}
+//Now obtener el id para la answer del mensaje cifrado y descifrado
+
+let result1 = document.getElementById("cipherResult");
+button1.addEventListener("click", cipher.encode); 
+let result2 = document.getElementById("decipherResult")
+button2.addEventListener("click", cipher.decode); 

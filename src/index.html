@@ -2,37 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="Container">
-      <h1>🔐Secret Message🔐</h1>
-      <hr>
-      <div style="float:left;">
-        <label>🔑Escribe el texto aqui:</label>
+  <body >
+  
+      <h1> SECRET MESSAGE </h1>
+      <p>🔐 Bienvenidx a Cifrado César 🔐</p> 
+      <hr>     
+
+      <div class="container">
+        <p><img src="http://telefonosencriptados.net/images/icon_GAMFTencryption.png">
+        <p>Ingresa el mensaje </p>
+        <input type="text" id = "textToCipherAndDecipher">
         <br>
-        <textarea id="decrypted" placeholder="Ingresa el mensaje a cifrar"></textarea>
-        <br>
-        <label>🤔Texto Cifrado:</label>
-        <br>
-        <textarea id="encrypted" placeholder="Ingresa el mennsaje cifrado a descifrar"></textarea>
-      </div>
-      <div style="float:left;">
-        <label>offset:</label>
-        <br>
-        <input type="number" id="offset" min="0" max="6" value="0"><br>
-        <input type="submit" onclick="encrypt()" value="Cipher"><br>
-        <input type="submit" onclick="decrypt()" value="Decipher"><br>
-        <input type="reset" onclick="clearBoxes()" value="Reset"><br>
+        
+        <p>Offset</p>>
+        
+          <input id="number" type="text" style="width : 50px; height: 15px">
+          <input type="button" value="Cifrar" id = "cipherButton">
+          <input type="button" value="Descrifar" id = "decipherButton">
+             
+             <div class = "div2">Mensaje cifrado:</div>
+             <p id = "cipherResult"></p>
+             
+             <div class = "div2">Mensaje descifrado:</div>
+             <p id = "decipherResult"></p>
         
       </div>
-        <div>
-          <label>Output:</label><br>
-          <br>
-          <textarea id="chains" readonly></textarea>
-        </div>  
-    </div>
+    </body>           
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

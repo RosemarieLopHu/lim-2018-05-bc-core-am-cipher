@@ -1,30 +1,65 @@
 body {
-    background-color: rgb(189, 252, 246);
-  }
-textarea {
-    width: 400px;
-    height: 100px;
-    text-transform: uppercase;
-    margin: 10px 0 10px 0;
+    background-color: rgb(245,255,250);
 }
-select {
-    width: 100px;
+.container {
+    margin: 20px 150px 20px 150px;
+    background-color: white;
+    color: #3498DB;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 50px;
+    font-size: 20px;
 }
-section {
-    margin: auto;
-    width: 90%;
-    padding: 20px;
+p{
+    color:#3498DB;
 }
 h1 {
+    color:#3498DB;
     text-align: center;
+}
+hr{
+    color: #3498DB;
+    border:1px solid;
+}
+img {
+    float: right;
 }
 div {
     padding: 20px;
 }
 input {
     padding: 4px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px 0;  
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0.5px solid;
+    color: #3498DB;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 4px 2px;
 }
-#chains {
-    height: 250px;
+#cipherButton {
+    background-color: #F5FFFA;
+    border: 0.5px solid;
+    color: #3498DB;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15px;
+}
+#decipherButton{
+    background-color: #F5FFFA;
+    border: 0.5px solid;
+    color: #3498DB;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 15px;
 }
