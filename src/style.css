@@ -1,14 +1,32 @@
 body {
     background-color: rgb(245,255,250);
+    background-image: url(https://en.agictech.com/media/1704/immagine2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background-color: hsla(245,100%,25%,0.3);
+    border: 2px solid;
+    border-radius: 50px;
+    text-align: justify-all;
+    padding: 5px;
+    font-size: 20px;
+    border-color: #3498DB; 
+}
+footer{
+    text-align: right;
 }
 .container {
-    margin: 20px 150px 20px 150px;
-    background-color: white;
+    margin: 20px 100px 20px 100px;
+    background-color: #F8F8FF;
     color: #3498DB;
     padding: 30px;
     border: 2px solid;
     border-radius: 50px;
     font-size: 20px;
+    float: center;
 }
 p{
     color:#3498DB;
@@ -17,30 +35,40 @@ h1 {
     color:#3498DB;
     text-align: center;
 }
-hr{
-    color: #3498DB;
-    border:1px solid;
-}
-img {
+.container img{
+    height: 160px;
+    display: block;
     float: right;
 }
-div {
-    padding: 20px;
+img{
+    transition: all 0.5s ease;
+}
+img:hover{
+    transform: scale(0.9);
 }
 input {
-    padding: 4px;
-    margin: 10px 0 10px 0;  
+    padding: 2px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     border: 0.5px solid;
     color: #3498DB;
     border-radius: 15px;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 15px;
+    min-height: 20px;
 }
-#cipherButton {
-    background-color: #F5FFFA;
+label {
+    color:#3498DB;
+}
+#result {
+    margin: 20px 100px 20px 100px;
+    background-color: #F8F8FF;
+    color: #3498DB;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#btn-encode {
+    background-color: #F0FFFF;
     border: 0.5px solid;
     color: #3498DB;
     padding: 5px 20px;
@@ -51,8 +79,8 @@ input {
     margin: 4px 2px;
     border-radius: 15px;
 }
-#decipherButton{
-    background-color: #F5FFFA;
+#btn-decode{
+    background-color: #F0FFFF;
     border: 0.5px solid;
     color: #3498DB;
     padding: 5px 20px;

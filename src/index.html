@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body >
-  
-      <h1> SECRET MESSAGE </h1>
-      <p>🔐 Bienvenidx a Cifrado César 🔐</p> 
-      <hr>     
-
-      <div class="container">
-        <p><img src="http://telefonosencriptados.net/images/icon_GAMFTencryption.png">
-        <p>Ingresa el mensaje </p>
-        <input type="text" id = "textToCipherAndDecipher">
-        <br>
-        
-        <p>Offset</p>>
-        
-          <input id="number" type="text" style="width : 50px; height: 15px">
-          <input type="button" value="Cifrar" id = "cipherButton">
-          <input type="button" value="Descrifar" id = "decipherButton">
-             
-             <div class = "div2">Mensaje cifrado:</div>
-             <p id = "cipherResult"></p>
-             
-             <div class = "div2">Mensaje descifrado:</div>
-             <p id = "decipherResult"></p>
-        
-      </div>
-    </body>           
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Secret Message</h1>
+        <p>🔐 Bienvenidx a Cifrado César 🔐</p> 
+    </header>
+        <div class="container">
+          <img src="http://telefonosencriptados.net/images/icon_GAMFTencryption.png">
+          <p>Ingresa el mensaje:</p>
+          <input type="text" id="message" required/>
+          <br>
+          <p>Offset:</p>
+          <input type="text" id="number" required/>
+          <br>
+          <button id="btn-encode">Encode</button>
+          <button id="btn-decode">Decode</button>
+        </div>
+        <div id="result">
+          <label>Secret Message:</label>
+          <p id="result-paragraph"></p>
+        </div>
+    <footer>
+      <p>Keep our Secret!</p>
+    </footer>
+  <!-- Scripts -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 </html>
